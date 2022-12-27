@@ -68,11 +68,11 @@ export default function TextForm(props) {
                     <label htmlFor="exampleFormControlTextarea1" className="form-label"><h2>Enter the text</h2></label>
                     <textarea className="form-control" value={text} onChange={handleOnChange} style={{backgroundColor: props.mode ==='dark' ? 'gray' : 'white' , color: props.mode ==='dark' ? 'white' : 'black' }} id="myBox" rows="8" ></textarea>
                 </div>
-                <button className="btn btn-primary mx-2" onClick={handleUpClick}>Convert to UpperCase</button>
-                <button className="btn btn-primary mx-2" onClick={handleLoClick}>Convert to LowerCase</button>
-                <button className="btn btn-primary mx-2" onClick={handleClearClick}>clear Text</button>
-                <button className="btn btn-primary mx-2" onClick={handleCapitalizeClick}>Captialize each word</button>
-                <button className="btn btn-primary mx-2" onClick={handleReverseClick}>reverse words</button>
+                <button className="btn btn-primary mx-2 my-1" onClick={handleUpClick}>Convert to UpperCase</button>
+                <button className="btn btn-primary mx-2 my-1" onClick={handleLoClick}>Convert to LowerCase</button>
+                <button className="btn btn-primary mx-2 my-1" onClick={handleClearClick}>clear Text</button>
+                <button className="btn btn-primary mx-2 my-1" onClick={handleCapitalizeClick}>Captialize each word</button>
+                <button className="btn btn-primary mx-2 my-1" onClick={handleReverseClick}>reverse words</button>
             </div>
             <div className="container my-4" style={{color: props.mode ==='dark' ? 'white' : 'black'}}>
                 <h2>your text summary</h2>
